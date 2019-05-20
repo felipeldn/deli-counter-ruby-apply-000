@@ -1,13 +1,6 @@
-katz_deli = ["Grace", "Tom", "Alan"]
+katz_deli = []
 
-def take_a_number(array, name)
-  array.push(name)
-  position = array.index(name)
-  puts "Welcome, #{name}. You are number #{array.index(name)+1} in line."
-  return name, position 
-end
-    
-    def line(array)
+def line(array)
   if array.empty?
     puts 'The line is currently empty.'
   else
@@ -19,6 +12,18 @@ end
     puts message.to_s
   end
 end
+
+def take_a_number(array, name)
+  array.push(name)
+  position = array.index(name)
+  puts "Welcome, #{name}. You are number #{array.index(name)+1} in line."
+  return name, position 
+end
+
+take_a_number(katz_deli, 'Grace')
+take_a_number(katz_deli, 'Tom')
+take_a_number(katz_deli, 'Alan')
+    
 
 line(katz_deli)
     
